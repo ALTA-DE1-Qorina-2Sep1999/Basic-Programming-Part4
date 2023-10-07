@@ -2,6 +2,8 @@ import unittest
 from main import cetak_table_perkalian
 
 class TestCetakTablePerkalian(unittest.TestCase):
+    def setUp(self):
+        self.maxDiff = None
     def test_cetak_table_perkalian_9(self):
         expected_output = (
             " 1 2 3 4 5 6 7 8 9\n"
